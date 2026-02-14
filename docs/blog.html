@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog — CursoIA</title>
+  <meta name="description" content="Artículos sobre IA para programadores: ChatGPT, LLM, RAG, agentes y automatización con IA.">
+  <link rel="icon" href="favicon.ico" type="image/png">
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+  /* Estilos del blog (extraídos de blog.php) */
+  .blog-wrap{ padding: 34px 0; }
+  .blog-grid{
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 22px;
+    align-items: start;
+  }
+  .card{
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.08);
+    padding: 18px;
+    margin-bottom: 14px;
+  }
+  .side-block{
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.08);
+    padding: 16px;
+    margin-bottom: 14px;
+  }
+  .side-block h3{ margin:0 0 10px; font-size: 15px; font-weight: 900; }
+  .cat-list{ display:flex; flex-wrap:wrap; gap: 8px; }
+  .chip{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 999px;
+    background: rgba(0,0,0,.06);
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .chip:hover{ background: rgba(243,154,26,.18); }
+  .muted{ color: #5b6670; }
+  .small{ font-size: 12px; }
+  .blog-meta{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+  }
+  .sep{ color: #ccc; }
+  .blog-card h2{ font-size: 18px; margin: 0 0 6px; }
+  .blog-card h2 a{ color: inherit; text-decoration: none; }
+  .blog-card h2 a:hover{ text-decoration: underline; text-underline-offset: 3px; }
+  .blog-card-actions{
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+  }
+  .btn-ghost{
+    background: transparent;
+    border: 1px solid rgba(0,0,0,.14);
+    color: #2f3a44;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .15s;
+  }
+  .btn-ghost:hover{ background: rgba(0,0,0,.04); }
+  .blog-list-head{ margin-bottom: 18px; }
+  .blog-list-head h1{ font-size: 28px; margin-bottom: 4px; }
+  .search-box{
+    display: flex;
+    gap: 6px;
+  }
+  .search-box input{
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid rgba(0,0,0,.12);
+    border-radius: 6px;
+    font: inherit;
+    font-size: 13px;
+  }
+  .search-box button{
+    padding: 8px 14px;
+    background: var(--orange);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 800;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  @media (max-width: 980px){
+    .blog-grid{ grid-template-columns: 1fr; }
+  }
+  </style>
+</head>
+
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header>
+  <div class="container">
+    <div class="topbar">
+      <div id="corporativo" aria-label="Marca">
+        <a href="index.html" aria-label="CursoIA">
+          <img src="logo.png" alt="Logo de CursoIA" width="42" height="42" loading="eager" decoding="async">
+        </a>
+        <div class="texto">
+          <span class="t1">CursoIA</span>
+          <span class="t2">Curso de Inteligencia Artificial</span>
+        </div>
+      </div>
+
+      <nav aria-label="Navegación principal">
+        <a href="index.html#heroe">Inicio</a>
+        <a href="index.html#destacado2">Metodología</a>
+        <a href="index.html#destacado4">Temario</a>
+        <a href="blog.html" class="nav-cta">Blog</a>
+        <a href="index.html#contacto" class="nav-cta">Inscripción</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+  <div class="blog-wrap">
+    <div class="container blog-grid">
+
+      <!-- Sidebar -->
+      <aside>
+        <div class="side-block">
+          <h3>Buscar</h3>
+          <div class="search-box">
+            <input type="text" placeholder="Buscar artículos…" id="searchInput">
+            <button onclick="filtrarPosts()">🔍</button>
+          </div>
+        </div>
+        <div class="side-block">
+          <h3>Categorías</h3>
+          <div class="cat-list">
+            <span class="chip" onclick="filtrarCat('')">Todas (3)</span>
+            <span class="chip" onclick="filtrarCat('ChatGPT')">ChatGPT (1)</span>
+            <span class="chip" onclick="filtrarCat('RAG')">RAG (1)</span>
+            <span class="chip" onclick="filtrarCat('Agentes')">Agentes (1)</span>
+          </div>
+        </div>
+        <div class="side-block">
+          <h3>Sobre el blog</h3>
+          <p class="muted small">Artículos sobre IA aplicada a desarrollo: ChatGPT, LLM, RAG, agentes, evaluación y automatización.</p>
+        </div>
+      </aside>
+
+      <!-- Listado de posts -->
+      <section class="blog-list">
+        <div class="blog-list-head">
+          <h1>Blog</h1>
+          <p class="muted">IA práctica para programadores: ChatGPT, LLM, RAG, agentes, evaluación y despliegue.</p>
+        </div>
+
+        <article class="blog-card card" data-cat="ChatGPT">
+          <p class="blog-meta">
+            <span class="chip">ChatGPT</span>
+            <span class="sep">·</span>
+            <time datetime="2026-02-10">10/02/2026</time>
+            <span class="sep">·</span>
+            <span class="muted small">⏱ 4 min de lectura</span>
+          </p>
+          <h2><a href="#" onclick="alert('En la versión real, aquí se abre el artículo completo desde SQLite.');return false;">Cómo integrar ChatGPT en tu aplicación web con la API de OpenAI</a></h2>
+          <p class="muted">Guía paso a paso para conectar tu backend (PHP, Node, Python) con la API de ChatGPT. Incluye autenticación, manejo de tokens, streaming de respuestas y patrones para controlar costes y latencia en producción…</p>
+          <div class="blog-card-actions">
+            <a class="btn btn-ghost" href="#" onclick="alert('Artículo completo en la versión con PHP+SQLite');return false;">Leer</a>
+            <a class="btn btn-primary" href="index.html#contacto">Inscripción</a>
+          </div>
+        </article>
+
+        <article class="blog-card card" data-cat="RAG">
+          <p class="blog-meta">
+            <span class="chip">RAG</span>
+            <span class="sep">·</span>
+            <time datetime="2026-01-28">28/01/2026</time>
+            <span class="sep">·</span>
+            <span class="muted small">⏱ 6 min de lectura</span>
+          </p>
+          <h2><a href="#" onclick="alert('En la versión real, este artículo se renderiza desde Markdown.');return false;">RAG desde cero: búsqueda semántica con tus propios documentos</a></h2>
+          <p class="muted">Implementación completa de Retrieval-Augmented Generation: vectorización de documentos, almacenamiento en base de datos vectorial, búsqueda por similitud coseno y generación de respuestas contextualizadas con LLM…</p>
+          <div class="blog-card-actions">
+            <a class="btn btn-ghost" href="#" onclick="alert('Artículo completo en la versión con PHP+SQLite');return false;">Leer</a>
+            <a class="btn btn-primary" href="index.html#contacto">Inscripción</a>
+          </div>
+        </article>
+
+        <article class="blog-card card" data-cat="Agentes">
+          <p class="blog-meta">
+            <span class="chip">Agentes</span>
+            <span class="sep">·</span>
+            <time datetime="2026-01-15">15/01/2026</time>
+            <span class="sep">·</span>
+            <span class="muted small">⏱ 5 min de lectura</span>
+          </p>
+          <h2><a href="#" onclick="alert('En la versión real, se lee desde la BD SQLite.');return false;">Agentes con IA: cómo crear asistentes que usan herramientas y memoria</a></h2>
+          <p class="muted">Diseño e implementación de agentes inteligentes que pueden ejecutar funciones, consultar APIs, recordar contexto de conversaciones anteriores y tomar decisiones autónomas basadas en instrucciones del usuario…</p>
+          <div class="blog-card-actions">
+            <a class="btn btn-ghost" href="#" onclick="alert('Artículo completo en la versión con PHP+SQLite');return false;">Leer</a>
+            <a class="btn btn-primary" href="index.html#contacto">Inscripción</a>
+          </div>
+        </article>
+
+        <p class="muted small" style="text-align:center;margin-top:18px;">Página 1 de 1 · Mostrando 3 artículos</p>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-wrap">
+    <div>&copy; 2026 CursoIA Curso de Inteligencia Artificial — Todos los derechos reservados</div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;">
+      <a href="privacy.html" style="opacity:.85;">Privacy Policy</a>
+      <a href="terms.html" style="opacity:.85;">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* Filtro por categoría (mockup JS) */
+function filtrarCat(cat){
+  var cards = document.querySelectorAll('.blog-card');
+  cards.forEach(function(c){
+    if(cat === '' || c.dataset.cat === cat){
+      c.style.display = '';
+    } else {
+      c.style.display = 'none';
+    }
+  });
+}
+/* Búsqueda simple por título (mockup JS) */
+function filtrarPosts(){
+  var q = document.getElementById('searchInput').value.toLowerCase();
+  var cards = document.querySelectorAll('.blog-card');
+  cards.forEach(function(c){
+    var title = c.querySelector('h2').textContent.toLowerCase();
+    c.style.display = title.includes(q) ? '' : 'none';
+  });
+}
+</script>
+</body>
+</html>
