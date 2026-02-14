@@ -1,0 +1,107 @@
+{
+  "titulo1": "CursoIA",
+  "titulo2": "Curso de Inteligencia Artificial",
+
+  "title_full": "Curso de Inteligencia Artificial para Programadores | IA práctica en directo",
+  "meta_description": "Curso de inteligencia artificial para programadores en directo. Aprende ChatGPT, LLM, RAG, agentes y automatización con IA en proyectos reales. Clases online en vivo.",
+  "meta_robots": "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1",
+  "theme_color": "#f39a1a",
+
+  "canonical": "https://cursoia.es/",
+  "favicon": "logo.png",
+  "apple_touch_icon": "logo.png",
+
+  "og_site_name": "CursoIA",
+  "og_title": "Curso de Inteligencia Artificial para Programadores (en directo)",
+  "og_description": "Curso IA práctico para programadores: ChatGPT, LLM, RAG, agentes y automatización con IA. Proyectos reales, clases online en vivo y soporte.",
+  "og_image": "https://tucursoia.com/og.jpg",
+  "og_image_alt": "Curso de Inteligencia Artificial para Programadores en directo",
+
+  "twitter_title": "Curso IA práctico para programadores (en directo)",
+  "twitter_description": "ChatGPT, LLM, RAG y agentes: aprende a integrar IA en aplicaciones reales con proyectos prácticos en streaming.",
+  "twitter_image": "https://tucursoia.com/og.jpg",
+
+  "brand_name": "CursoIA",
+  "brand_logo_alt": "Logo de CursoIA",
+
+  "enlace 1": "Inicio",
+  "enlace 2": "Metodología",
+  "enlace 3": "Temario",
+  "enlace 4": "Sobre el curso",
+  "enlace 5": "Inscripción",
+
+  "heroetitulo": "Curso de Inteligencia Artificial para Programadores, en Directo: aprende creando proyectos reales",
+  "heroetexto": "Curso online en streaming (clases en vivo) para dominar IA aplicada a desarrollo: ChatGPT, LLM, prompts, RAG, agentes, evaluación, despliegue y automatización con IA. Enfoque 100% práctico, con soporte y material descargable.",
+  "heroeaccion": "Quiero reservar plaza",
+  "hero_micro": "Clases en vivo + grabaciones + materiales · IA práctica para programadores · Nivel: intermedio · Cupos limitados.",
+  "seo_note": "Curso de inteligencia artificial online para programadores que quieren aprender IA práctica: desde ChatGPT y modelos LLM hasta machine learning aplicado, automatización y desarrollo de asistentes inteligentes.",
+
+  "destacado1titulo": "No es un curso grabado. Es un taller online en vivo.",
+  "destacado1texto": "Sesiones en directo con ejercicios guiados, revisión de código y resolución de dudas en tiempo real. Construyes asistentes con IA y funcionalidades reales desde el primer día: chatbot útil, búsqueda semántica y automatizaciones integradas en tu stack.",
+  "destacado1_img_alt": "Taller online en vivo de inteligencia artificial para programadores",
+
+  "destacado2titulo": "IA práctica para programadores: integra IA en aplicaciones reales.",
+  "destacado2texto": "Aprenderás a crear soluciones de IA que aportan valor: asistentes para tu negocio, generación de contenido controlada, búsqueda semántica con tus documentos (RAG), y automatizar con IA mediante agentes. Sin humo: métricas, pruebas, control de calidad y buenas prácticas.",
+  "destacado2accion": "Ver metodología",
+  "destacado2_img_alt": "Programación de soluciones de inteligencia artificial con enfoque profesional",
+
+  "destacado3titulo": "Acompañamiento + Tecnología + Proyectos (repositorios listos).",
+  "destacado3texto": "Combina clases en vivo, ejercicios paso a paso y plantillas listas para usar. Te llevas repositorios, checklists y una guía clara para pasar de probar ChatGPT a diseñar sistemas con LLM fiables en producción.",
+  "destacado3_icon_alt": "Icono de tecnología, rendimiento y proyectos",
+
+  "destacado4titulo": "Programar IA de forma moderna (y segura): ChatGPT, LLM, RAG y agentes.",
+  "destacado4texto": "Diseñarás prompts robustos, implementarás RAG, crearás agentes con herramientas y memoria, e integrarás inteligencia artificial en aplicaciones reales (frontend y backend). Montarás pipelines con evaluación y control de calidad. Además: privacidad, costes y patrones para evitar resultados erráticos.",
+  "destacado4accion": "Ver temario",
+  "destacado4_img_alt": "Arquitectura moderna para integrar inteligencia artificial en aplicaciones",
+
+  "destacado5titulo1": "Tutoriales sueltos no escalan: aprende una arquitectura completa",
+  "destacado5texto1": "Mucho contenido de IA se queda en demos. Aquí construimos un sistema completo con arquitectura, pruebas, evaluación y despliegue para que puedas reutilizarlo en proyectos reales (producto, empresa o equipo).",
+  "destacado5titulo2": "De ChatGPT a sistemas: RAG, agentes y automatización",
+  "destacado5texto2": "Cada módulo termina con un entregable: chatbot, buscador semántico (RAG), agente con herramientas, evaluador de respuestas y automatizaciones con IA. Incluye checklist para adaptarlo a tu caso y mantenerlo medible y mantenible.",
+
+  "destacado6titulo1": "Menos diapositivas. Código en directo: practica, depura y despliega.",
+  "destacado6texto1": "Clases online en vivo centradas en programar: diseño, implementación, depuración y mejora. Acceso a grabaciones, materiales y sesiones de preguntas para consolidar lo aprendido y aplicar IA en tu trabajo.",
+  "destacado6accion": "Ver fechas y formato",
+
+  "destacado7titulo1": "Por qué este curso de IA para programadores — cuando quieres resultados",
+  "destacado7texto1": "La mayoría aprende IA como curiosidad. Aquí aprendes inteligencia artificial como herramienta profesional: una ruta clara, ejercicios aplicables y proyectos útiles desde el primer día.",
+  "destacado7texto2": "Aprendes a integrar IA en aplicaciones: APIs, base de conocimiento (RAG), herramientas, evaluación de respuestas, control de costes y despliegue. Ideal para desarrollo web, backend y automatización.",
+  "destacado7texto3": "Programar IA no es solo usar ChatGPT: es diseñar sistemas fiables, medibles y mantenibles.",
+
+  "destacado8titulo": "Proyecto final end-to-end: asistente de IA completo con RAG y métricas",
+  "destacado8texto": "Termina el curso con un proyecto final completo: app con interfaz, backend, base de conocimiento (RAG), logs, métricas, evaluación y mejoras iterativas. Un entregable que podrás enseñar, vender o usar en tu empresa/equipo.",
+  "destacado8accion": "Inscribirme ahora",
+  "destacado8_img_alt": "Proyecto final de asistente con IA, RAG, evaluación y métricas",
+
+  "destacado9titulo": "Para programadores, equipos y emprendedores (IA aplicada)",
+  "destacado9texto": "Diseñado para quienes ya programan y quieren aplicar IA de forma práctica: automatización con IA, asistentes internos, soporte al cliente, generación de documentación, productividad y negocio. Incluye fundamentos útiles de LLM y machine learning aplicado para desarrollar con criterio.",
+  "destacado9accion": "Solicitar información",
+  "destacado9_img_alt": "Inteligencia artificial aplicada para equipos y emprendedores",
+
+  "contact_title": "Contacta e inscríbete",
+  "contact_intro": "Cuéntanos tu caso y te confirmamos si este curso encaja con tus objetivos (equipo, empresa o proyecto personal).",
+
+  "form_title": "Contacto",
+  "form_intro": "Cuéntame tu objetivo (ChatGPT, RAG, agentes, automatización) y tu stack (web/backend) para responderte con una recomendación clara.",
+  "form_cta": "Enviar mensaje",
+  "form_legal": "Al enviar este formulario aceptas nuestra política de privacidad y el tratamiento de tus datos para responder a tu solicitud.",
+
+  "privacy_url": "privacy.html",
+  "terms_url": "terms.html",
+
+  "direccion": "Online · Clases en directo por streaming",
+  "telefono": "+34 600 000 000",
+  "telefono_raw": "+34600000000",
+  "email": "info@tucursoia.com",
+
+  "social_linkedin": "https://www.linkedin.com/",
+  "social_x": "https://x.com/",
+  "social_youtube": "https://www.youtube.com/",
+
+  "hero_image": "hero.jpg",
+
+  "anio": "2026",
+
+  "raw:jsonld": "{\n  \"@context\": \"https://schema.org\",\n  \"@graph\": [\n    {\n      \"@type\": \"Organization\",\n      \"name\": \"CursoIA\",\n      \"url\": \"https://tucursoia.com/\",\n      \"logo\": \"https://tucursoia.com/logo.png\",\n      \"email\": \"info@tucursoia.com\",\n      \"telephone\": \"+34600000000\",\n      \"sameAs\": [\n        \"https://www.linkedin.com/\",\n        \"https://x.com/\",\n        \"https://www.youtube.com/\"\n      ]\n    },\n    {\n      \"@type\": \"WebSite\",\n      \"name\": \"CursoIA\",\n      \"url\": \"https://tucursoia.com/\",\n      \"inLanguage\": \"es\"\n    },\n    {\n      \"@type\": \"WebPage\",\n      \"name\": \"Curso de Inteligencia Artificial para Programadores | IA práctica en directo\",\n      \"url\": \"https://tucursoia.com/\",\n      \"description\": \"Curso de inteligencia artificial para programadores en directo. Aprende ChatGPT, LLM, RAG, agentes y automatización con IA en proyectos reales.\"\n    },\n    {\n      \"@type\": \"Course\",\n      \"name\": \"Curso de Inteligencia Artificial para Programadores (en directo)\",\n      \"description\": \"Curso online en streaming (clases en vivo) de IA aplicada a desarrollo: ChatGPT, LLM, prompts, RAG, agentes, evaluación, despliegue y automatización con IA.\",\n      \"provider\": {\n        \"@type\": \"Organization\",\n        \"name\": \"CursoIA\",\n        \"sameAs\": \"https://tucursoia.com/\"\n      },\n      \"inLanguage\": \"es\",\n      \"courseMode\": [\"online\", \"live\"],\n      \"audience\": {\n        \"@type\": \"Audience\",\n        \"audienceType\": \"Programadores\"\n      }\n    }\n  ]\n}\n"
+}
+

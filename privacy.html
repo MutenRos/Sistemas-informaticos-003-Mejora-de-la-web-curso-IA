@@ -1,0 +1,216 @@
+<!-- privacy.html -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Política de privacidad | CursoIA</title>
+  <meta name="description" content="Política de privacidad de CursoIA: información sobre el tratamiento de datos personales, finalidades, base legal, conservación y derechos." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <link rel="canonical" href="https://cursoia.es/privacy.html">
+  <link rel="icon" href="favicon.ico" type="image/png">
+  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="stylesheet" href="estilo.css">
+
+  <style>
+    /* Reutiliza look&feel del blog (cards, grid, etc.) sin tocar estilo.css */
+    .legal-wrap{ padding: 34px 0; }
+    .legal-grid{
+      display:grid;
+      grid-template-columns: 320px 1fr;
+      gap: 22px;
+      align-items:start;
+    }
+    .card{
+      background:#fff;
+      border:1px solid rgba(0,0,0,.08);
+      padding: 18px;
+    }
+    .side-block{
+      background:#fff;
+      border:1px solid rgba(0,0,0,.08);
+      padding:16px;
+      margin-bottom: 14px;
+    }
+    .side-block h3{ margin:0 0 10px; font-size: 15px; font-weight: 900; }
+    .cat-list{ display:flex; flex-wrap:wrap; gap: 8px; }
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      background: rgba(0,0,0,.06);
+      font-size: 12px;
+      font-weight: 800;
+      text-decoration:none;
+    }
+    .chip:hover{ background: rgba(243,154,26,.18); }
+    .muted{ color:#5b6670; }
+    .small{ font-size: 12px; }
+
+    .legal h1{ margin:0 0 8px; font-size: 28px; font-weight: 900; }
+    .legal h2{ margin:22px 0 10px; font-size: 20px; font-weight: 900; }
+    .legal h3{ margin:18px 0 10px; font-size: 16px; font-weight: 900; }
+    .legal p{ margin:0 0 14px; color:#2f3a44; font-size: 15px; }
+    .legal ul{ padding-left: 22px; margin: 10px 0 16px; color:#2f3a44; }
+    .legal li{ margin: 6px 0; }
+    .legal code{
+      padding: 2px 6px;
+      border: 1px solid rgba(0,0,0,.12);
+      background: rgba(0,0,0,.04);
+    }
+    .note{
+      border-left: 4px solid rgba(243,154,26,.55);
+      padding: 12px;
+      background: rgba(243,154,26,.08);
+      margin: 14px 0;
+    }
+    .toc a{ display:block; padding:6px 0; }
+    .toc a:hover{ text-decoration: underline; text-underline-offset: 4px; }
+    .toplink{ margin-top:14px; display:inline-block; }
+
+    @media (max-width: 980px){
+      .legal-grid{ grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header>
+  <div class="container">
+    <div class="topbar">
+      <div id="corporativo" aria-label="Marca">
+        <a href="index.php" aria-label="CursoIA">
+          <img src="logo.png" alt="Logo de CursoIA" width="42" height="42" loading="eager" decoding="async">
+        </a>
+        <div class="texto">
+          <span class="t1">CursoIA</span>
+          <span class="t2">Curso de Inteligencia Artificial</span>
+        </div>
+      </div>
+
+      <nav aria-label="Navegación principal">
+        <a href="index.php#heroe">Inicio</a>
+        <a href="index.php#destacado2">Metodología</a>
+        <a href="index.php#destacado4">Temario</a>
+        <a href="blog.php" class="nav-cta">Blog</a>
+        <a href="index.php#contacto" class="nav-cta">Inscripción</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="contenido" class="legal-wrap">
+  <div class="container legal-grid">
+
+    <aside class="legal-side">
+      <div class="side-block">
+        <h3>Documentos legales</h3>
+        <div class="cat-list">
+          <a class="chip" href="privacy.html">Privacidad</a>
+          <a class="chip" href="terms.html">Términos</a>
+          <a class="chip" href="blog.php">Blog</a>
+          <a class="chip" href="index.php#contacto">Contacto</a>
+        </div>
+        <p class="muted small" style="margin-top:10px;">
+          Última actualización: <strong>2026-01-12</strong>
+        </p>
+      </div>
+
+      <div class="side-block toc">
+        <h3>Índice</h3>
+        <a href="#responsable">1. Responsable</a>
+        <a href="#datos">2. Datos que recopilamos</a>
+        <a href="#finalidades">3. Finalidades</a>
+        <a href="#baselegal">4. Base legal</a>
+        <a href="#conservacion">5. Conservación</a>
+        <a href="#destinatarios">6. Destinatarios</a>
+        <a href="#derechos">7. Derechos</a>
+        <a href="#seguridad">8. Seguridad</a>
+        <a href="#cookies">9. Cookies</a>
+        <a href="#contacto">10. Contacto</a>
+      </div>
+    </aside>
+
+    <section class="legal card">
+      <h1>Política de privacidad</h1>
+      <p class="muted">Esta política explica cómo tratamos los datos personales cuando visitas <strong>cursoia.es</strong>, rellenas formularios o interactúas con nuestros contenidos.</p>
+
+      <div class="note">
+        <p class="small muted" style="margin:0;">
+          Plantilla práctica para sitio web de curso online. Ajusta “Responsable”, “DPO”, dirección y herramientas reales (newsletter, analytics, CRM) a tu caso.
+        </p>
+      </div>
+
+      <h2 id="responsable">1. Responsable del tratamiento</h2>
+      <p><strong>Responsable:</strong> CursoIA (en adelante, “CursoIA”).</p>
+      <p><strong>Email de contacto:</strong> <a href="mailto:info@cursoia.es">info@cursoia.es</a></p>
+      <p><strong>Ámbito del servicio:</strong> formación online en streaming para programadores.</p>
+
+      <h2 id="datos">2. Datos personales que recopilamos</h2>
+      <ul>
+        <li><strong>Datos de contacto</strong> (p. ej., nombre, email) cuando envías un formulario.</li>
+        <li><strong>Contenido del mensaje</strong> que escribes en el formulario.</li>
+        <li><strong>Datos técnicos</strong> (p. ej., IP aproximada o hash de IP, user-agent, páginas visitadas, referer), con fines de seguridad y analítica básica.</li>
+      </ul>
+
+      <h2 id="finalidades">3. Finalidades del tratamiento</h2>
+      <ul>
+        <li><strong>Responder solicitudes</strong> enviadas mediante formularios (información, inscripción, dudas).</li>
+        <li><strong>Gestión de la relación</strong> (seguimiento de conversación, propuestas, soporte).</li>
+        <li><strong>Seguridad</strong> (detección de abuso, protección frente a accesos no autorizados).</li>
+        <li><strong>Analítica básica</strong> para entender el uso del sitio (páginas más visitadas, tendencias).</li>
+      </ul>
+
+      <h2 id="baselegal">4. Base legal</h2>
+      <ul>
+        <li><strong>Consentimiento</strong> del usuario al enviar formularios.</li>
+        <li><strong>Interés legítimo</strong> en seguridad del sitio y mejora del servicio (analítica mínima, prevención de abusos).</li>
+        <li><strong>Ejecución de medidas precontractuales/contractuales</strong> si solicitas información para contratar un curso.</li>
+      </ul>
+
+      <h2 id="conservacion">5. Plazos de conservación</h2>
+      <ul>
+        <li><strong>Mensajes de contacto:</strong> el tiempo necesario para gestionar la solicitud y, en su caso, para mantener la relación y obligaciones legales.</li>
+        <li><strong>Registros técnicos (logs):</strong> un periodo limitado (p. ej., 30–365 días) según necesidades de seguridad y analítica.</li>
+      </ul>
+
+      <h2 id="destinatarios">6. Destinatarios y transferencias</h2>
+      <p>Con carácter general, <strong>no vendemos ni cedemos</strong> tus datos a terceros. Podrán acceder proveedores necesarios para operar el servicio (p. ej., hosting, email), bajo contrato y con medidas adecuadas.</p>
+      <p>Si se usan herramientas externas (newsletter, CRM, analítica avanzada), se informará y, cuando proceda, se solicitará consentimiento.</p>
+
+      <h2 id="derechos">7. Derechos de las personas</h2>
+      <p>Puedes ejercer los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad enviando un email a <a href="mailto:info@cursoia.es">info@cursoia.es</a>.</p>
+      <p class="muted small">Para tramitarlo podremos solicitar información para verificar tu identidad.</p>
+
+      <h2 id="seguridad">8. Medidas de seguridad</h2>
+      <p>Aplicamos medidas técnicas y organizativas razonables para proteger la información (control de accesos, registros de seguridad, prácticas de desarrollo y administración del servidor).</p>
+
+      <h2 id="cookies">9. Cookies</h2>
+      <p>El sitio puede usar cookies técnicas necesarias y, opcionalmente, cookies de medición. Si se activan cookies no esenciales, se mostrará un aviso y se habilitará la gestión del consentimiento.</p>
+
+      <h2 id="contacto">10. Contacto</h2>
+      <p>Si tienes dudas sobre privacidad, escribe a <a href="mailto:info@cursoia.es">info@cursoia.es</a>.</p>
+
+      <a class="chip toplink" href="#contenido">↑ Volver arriba</a>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-wrap">
+    <div>(c) 2026 CursoIA Curso de Inteligencia Artificial — Todos los derechos reservados</div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;">
+      <a href="privacy.html" style="opacity:.85;">Privacy Policy</a>
+      <a href="terms.html" style="opacity:.85;">Terms of Use</a>
+      <a href="blog.php?rss=1" style="opacity:.85;">RSS</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
